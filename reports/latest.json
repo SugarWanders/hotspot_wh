@@ -1,0 +1,43 @@
+{
+  "run_id": "20260313_034341",
+  "run_at": "2026-03-13T03:43:41.904609+00:00",
+  "db": "/root/.openclaw/workspace/wuhan_news/wuhan_monitor.db",
+  "fetched": 231,
+  "kept_24h": 6,
+  "deduped": 4,
+  "new_rows": 4,
+  "items": [
+    {
+      "title": "Qantas agrees to pay $105m for Covid flight credit scandal - Sky News Australia",
+      "url": "https://www.skynews.com.au/business/finance/qantas-agrees-to-pay-105m-for-covid-flight-credit-scandal-after-class-action-case/news-story/272fbf3436b22b8426d15cacd12c037b",
+      "source": "",
+      "published_at": "2026-03-13T03:43:41.904609+00:00",
+      "platform": "Tavily",
+      "is_thinktank": false
+    },
+    {
+      "title": "Qantas agrees to pay $105 million to settle Covid flight credit class action - travelweekly.com.au",
+      "url": "https://travelweekly.com.au/qantas-agrees-to-pay-105-million-to-settle-covid-flight-credit-class-action/",
+      "source": "",
+      "published_at": "2026-03-13T03:43:41.904609+00:00",
+      "platform": "Tavily",
+      "is_thinktank": false
+    },
+    {
+      "title": "Husband behind $14M COVID loan scam bought mansion for another wife he had in the Middle East - New York Post",
+      "url": "https://nypost.com/2026/03/12/us-news/husband-behind-14m-scam-bought-mansion-for-second-spouse-infuriating-his-wife-in-the-us/",
+      "source": "",
+      "published_at": "2026-03-13T03:43:41.904609+00:00",
+      "platform": "Tavily",
+      "is_thinktank": false
+    },
+    {
+      "title": "I blew the whistle on Covid jabs five years ago. Now, I’m fighting for my medical licence - The Telegraph",
+      "url": "https://www.telegraph.co.uk/news/2026/03/12/fighting-for-medical-licence-after-blowing-covid-whistle/",
+      "source": "",
+      "published_at": "2026-03-13T03:43:41.904609+00:00",
+      "platform": "Tavily",
+      "is_thinktank": false
+    }
+  ]
+}

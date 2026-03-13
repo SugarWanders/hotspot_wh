@@ -1,0 +1,104 @@
+
+<!doctype html>
+<html lang='zh'>
+<head>
+  <meta charset='utf-8' />
+  <meta name='viewport' content='width=device-width,initial-scale=1' />
+  <title>武汉负面舆情看板</title>
+  <style>
+    :root {
+      --bg1:#070b1a;
+      --bg2:#0b1130;
+      --card: rgba(11,17,48,.72);
+      --text:#e9f6ff;
+      --sub:#97b2d8;
+      --line: rgba(0,255,255,.25);
+      --neon1:#00f7ff;
+      --neon2:#ff2bd6;
+      --neon3:#8bff3d;
+      --warn:#ff5d5d;
+      --radius: 16px;
+      --shadow: 0 0 0 1px rgba(0,247,255,.18), 0 0 18px rgba(0,247,255,.18), 0 0 42px rgba(255,43,214,.12);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background: radial-gradient(1200px 500px at 10% -10%, #1a225a 0%, transparent 60%),
+                  radial-gradient(1000px 600px at 95% 0%, #3a0f4f 0%, transparent 60%),
+                  linear-gradient(180deg,var(--bg2),var(--bg1));
+      color:var(--text);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'PingFang SC', monospace;
+    }
+    .wrap{max-width:1100px;margin:24px auto;padding:0 16px}
+    .hero{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:16px 18px;box-shadow:var(--shadow);margin-bottom:14px}
+    .hero h1{margin:0 0 6px;font-size:30px;letter-spacing:.4px;color:var(--neon1);text-shadow:0 0 10px rgba(0,247,255,.35)}
+    .hero p{margin:0;color:var(--sub)}
+    .grid{display:grid;grid-template-columns:1fr;gap:12px}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px;box-shadow:var(--shadow)}
+    .row{display:flex;justify-content:space-between;align-items:center}
+    .top{margin-bottom:8px}
+    .rank{font-weight:800;color:var(--neon3);text-shadow:0 0 8px rgba(139,255,61,.3)}
+    .score{font-weight:800;color:var(--warn);text-shadow:0 0 8px rgba(255,93,93,.35)}
+    h3{margin:0 0 8px;font-size:17px;line-height:1.35;color:#dff2ff}
+    .meta{display:flex;flex-wrap:wrap;gap:10px;color:var(--sub);font-size:12px;margin-bottom:8px}
+    .chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px}
+    .chip{font-size:12px;padding:3px 8px;border-radius:999px;border:1px solid var(--line);background:rgba(0,0,0,.18)}
+    .c1{color:var(--neon1)}
+    .c2{color:var(--warn)}
+    .insight{margin:0 0 10px;color:#c3dbff;line-height:1.5}
+    a{color:var(--neon2);text-decoration:none;font-weight:700}
+    a:hover{text-decoration:underline}
+    .empty{padding:24px;text-align:center;color:var(--sub)}
+  </style>
+</head>
+<body>
+  <div id='lock' style="position:fixed;inset:0;background:rgba(7,11,26,.98);z-index:9999;display:flex;align-items:center;justify-content:center;">
+    <div style="width:min(92vw,420px);background:rgba(11,17,48,.85);border:1px solid rgba(0,255,255,.25);box-shadow:0 0 18px rgba(0,247,255,.18);border-radius:16px;padding:18px;">
+      <h2 style="margin:0 0 8px;color:#00f7ff">访问验证</h2>
+      <p style="margin:0 0 12px;color:#97b2d8;font-size:13px">请输入访问密码</p>
+      <input id='pwd' type='password' placeholder='Password' style="width:100%;padding:10px 12px;border-radius:10px;border:1px solid rgba(0,255,255,.25);background:#0b1130;color:#e9f6ff;outline:none" />
+      <button id='go' style="margin-top:10px;width:100%;padding:10px 12px;border-radius:10px;border:1px solid rgba(0,255,255,.35);background:#0f1a44;color:#e9f6ff;font-weight:700;cursor:pointer">进入</button>
+      <div id='err' style="margin-top:8px;color:#ff5d5d;font-size:12px;display:none">密码错误</div>
+    </div>
+  </div>
+
+  <main class='wrap'>
+    <header class='hero'>
+      <h1>武汉负面舆情看板</h1>
+      <p>范围：近24小时｜排序：综合分（负面强度 + 信源可信度）</p>
+      <p style='margin-top:6px;color:#98a2b3'>更新时间：2026-03-13 13:28:33｜模式：候选回退（避免空页）</p>
+    </header>
+    <section class='grid'>
+      <div class='card empty'>近24小时未检出高相关负面事件</div>
+    </section>
+  </main>
+  <script>
+    (function(){
+      const KEY='hotspot_access_ok_v1';
+      const PASS='badadui';
+      const lock=document.getElementById('lock');
+      const pwd=document.getElementById('pwd');
+      const go=document.getElementById('go');
+      const err=document.getElementById('err');
+
+      function unlock(){
+        lock.style.display='none';
+      }
+
+      if(localStorage.getItem(KEY)==='1') unlock();
+
+      function check(){
+        if((pwd.value||'').trim()===PASS){
+          localStorage.setItem(KEY,'1');
+          unlock();
+        }else{
+          err.style.display='block';
+        }
+      }
+
+      go.addEventListener('click',check);
+      pwd.addEventListener('keydown',e=>{ if(e.key==='Enter') check(); });
+    })();
+  </script>
+</body>
+</html>
