@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <clipPath id="c"><circle cx="32" cy="32" r="30"/></clipPath>
+  </defs>
+  <circle cx="32" cy="32" r="31" fill="#553C51"/>
+  <!-- 使用简化狮子图形元素，确保小尺寸可读 -->
+  <g clip-path="url(#c)">
+    <circle cx="32" cy="34" r="18" fill="#D6BC73"/>
+    <path d="M43 34c6-1 10 3 10 6s-4 7-10 6" fill="#FA5951"/>
+    <circle cx="27" cy="30" r="2.5" fill="#553C51"/>
+    <circle cx="36" cy="30" r="2.5" fill="#553C51"/>
+  </g>
+  <circle cx="32" cy="32" r="30" fill="none" stroke="#FA5951" stroke-width="2"/>
+</svg>
