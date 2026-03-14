@@ -1,24 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" shape-rendering="crispEdges">
-  <!-- bold circular background -->
-  <circle cx="32" cy="32" r="31" fill="#1f1720"/>
-  <circle cx="32" cy="32" r="29" fill="none" stroke="#ff6a5f" stroke-width="3"/>
+  <!-- v2: ultra-bold geometric lion for 16-32px tabs -->
+  <circle cx="32" cy="32" r="31" fill="#17121a"/>
+  <circle cx="32" cy="32" r="29" fill="none" stroke="#ff5f52" stroke-width="4"/>
 
-  <!-- geometric solid lion head -->
-  <!-- mane (solid polygonal mass) -->
-  <path d="M32 12 L46 18 L54 32 L46 46 L32 52 L18 46 L10 32 L18 18 Z" fill="#ff6a5f"/>
+  <!-- mane: single heavy mass -->
+  <path d="M32 10 L49 19 L55 32 L49 45 L32 54 L15 45 L9 32 L15 19 Z" fill="#ff5f52"/>
 
-  <!-- face plate -->
-  <path d="M32 20 L42 25 L42 38 L32 44 L22 38 L22 25 Z" fill="#e6c36f"/>
+  <!-- face: single block -->
+  <path d="M32 22 L43 27 L43 39 L32 44 L21 39 L21 27 Z" fill="#f0cb73"/>
 
-  <!-- ears -->
-  <path d="M24 20 L20 14 L28 17 Z" fill="#ff6a5f"/>
-  <path d="M40 20 L44 14 L36 17 Z" fill="#ff6a5f"/>
+  <!-- eyes: thicker bars -->
+  <rect x="24.5" y="30" width="6" height="4" rx="1" fill="#17121a"/>
+  <rect x="33.5" y="30" width="6" height="4" rx="1" fill="#17121a"/>
 
-  <!-- eyes (solid blocks) -->
-  <rect x="26" y="29" width="4" height="3" rx="1" fill="#1f1720"/>
-  <rect x="34" y="29" width="4" height="3" rx="1" fill="#1f1720"/>
-
-  <!-- nose and mouth block -->
-  <path d="M32 33 L35 36 L32 39 L29 36 Z" fill="#1f1720"/>
-  <rect x="28" y="40" width="8" height="2.8" rx="1.4" fill="#1f1720"/>
+  <!-- nose + mouth: single strong shape -->
+  <path d="M32 34 L36 38 L32 42 L28 38 Z" fill="#17121a"/>
 </svg>
