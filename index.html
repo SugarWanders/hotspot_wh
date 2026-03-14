@@ -39,7 +39,7 @@
     .grid{display:grid;grid-template-columns:1fr;gap:12px}
     .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px;box-shadow:var(--shadow)}
     .row{display:flex;justify-content:space-between;align-items:center}
-    .top{margin-bottom:8px}
+    .top{margin-bottom:8px;align-items:flex-start}
     .rank{font-weight:800;color:var(--neon3);font-size:28px;line-height:1;text-shadow:0 0 8px rgba(139,255,61,.3)}
     .score-wrap{display:flex;flex-direction:column;align-items:flex-end;gap:6px}
     .score{font-weight:800;color:var(--warn);font-size:28px;line-height:1;text-shadow:0 0 8px rgba(255,93,93,.35)}
@@ -54,6 +54,7 @@
     .c3{color:#ffd166}
     .impact{margin:0 0 8px;color:#c3dbff;font-size:14px;line-height:1.6}
     .judgement{margin:0 0 10px;color:#c3dbff;font-size:14px;line-height:1.6}
+    .label-accent{color:#ffd166;font-weight:800}
     a{color:var(--neon2);text-decoration:none;font-weight:700}
     a:hover{text-decoration:underline}
     .empty{padding:24px;text-align:center;color:var(--sub)}
@@ -73,8 +74,7 @@
   <main class='wrap'>
     <header class='hero'>
       <h1>今日热点分析</h1>
-      <p>范围：近24小时｜双主题：武汉 / 中国</p>
-      <p style='margin-top:6px;color:#98a2b3'>更新时间：2026-03-14 11:12:18</p>
+      <p>范围：近24小时 ｜ 更新时间：2026-03-14 11:19:51</p>
     </header>
     <section class='cols'>
       <div>
@@ -98,9 +98,9 @@
                 <span>平台：GNews</span>
                 <span>来源：The Indian Express</span>
               </div>
-              <p class='summary'>摘要：文章称世卫组织及相关方仍在围绕疫情起源、实验室关联和证据透明度进行争论。</p>
-              <p class='impact'>对武汉的负面影响：可能强化外界对武汉的责任归因与负面联想。</p>
-              <p class='judgement'>研判：若被主流媒体二次引用，舆情风险会明显抬升。</p>
+              <p class='summary'><span class='label-accent'>摘要：</span>文章称世卫组织及相关方仍在围绕疫情起源、实验室关联和证据透明度进行争论。</p>
+              <p class='impact'><span class='label-accent'>对武汉的负面影响：</span>可能强化外界对武汉的责任归因与负面联想。</p>
+              <p class='judgement'><span class='label-accent'>研判：</span>若被主流媒体二次引用，舆情风险会明显抬升。</p>
               <a href='https://indianexpress.com/article/world/who-chief-warns-agaisnt-pandemic-china-not-transparent-covid-10557072/' target='_blank'>查看原文 ↗</a>
             </section>
             
@@ -122,9 +122,9 @@
                 <span>平台：GNews</span>
                 <span>来源：Times Now</span>
               </div>
-              <p class='summary'>摘要：文章回顾疫情早期信息披露过程，强调对“信息压制/公开透明”的争议。</p>
-              <p class='impact'>对武汉的负面影响：可能强化外界对武汉的责任归因与负面联想。</p>
-              <p class='judgement'>研判：若被主流媒体二次引用，舆情风险会明显抬升。</p>
+              <p class='summary'><span class='label-accent'>摘要：</span>文章回顾疫情早期信息披露过程，强调对“信息压制/公开透明”的争议。</p>
+              <p class='impact'><span class='label-accent'>对武汉的负面影响：</span>可能强化外界对武汉的责任归因与负面联想。</p>
+              <p class='judgement'><span class='label-accent'>研判：</span>若被主流媒体二次引用，舆情风险会明显抬升。</p>
               <a href='https://www.timesnownews.com/world/from-wuhan-to-the-world-how-early-censorship-shaped-the-covid-19-pandemic-article-153575433' target='_blank'>查看原文 ↗</a>
             </section>
             </section>
