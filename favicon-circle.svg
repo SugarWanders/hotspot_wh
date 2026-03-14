@@ -1,16 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" shape-rendering="geometricPrecision">
-  <!-- high contrast circular favicon for tiny browser tabs -->
-  <circle cx="32" cy="32" r="31" fill="#2b1f2a"/>
-  <circle cx="32" cy="32" r="29" fill="none" stroke="#ff6b5f" stroke-width="3"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" shape-rendering="crispEdges">
+  <!-- bold circular background -->
+  <circle cx="32" cy="32" r="31" fill="#1f1720"/>
+  <circle cx="32" cy="32" r="29" fill="none" stroke="#ff6a5f" stroke-width="3"/>
 
-  <!-- simplified lion face -->
-  <circle cx="32" cy="34" r="15" fill="#e0c06d"/>
-  <circle cx="26.8" cy="30" r="2.6" fill="#2b1f2a"/>
-  <circle cx="37.2" cy="30" r="2.6" fill="#2b1f2a"/>
-  <circle cx="32" cy="35.2" r="1.8" fill="#2b1f2a"/>
-  <path d="M28.5 38.2c1.4 1.8 5.6 1.8 7 0" fill="none" stroke="#2b1f2a" stroke-width="2.2" stroke-linecap="round"/>
+  <!-- geometric solid lion head -->
+  <!-- mane (solid polygonal mass) -->
+  <path d="M32 12 L46 18 L54 32 L46 46 L32 52 L18 46 L10 32 L18 18 Z" fill="#ff6a5f"/>
 
-  <!-- tiny contrast accents -->
-  <circle cx="20" cy="22" r="2.2" fill="#ff6b5f" opacity="0.9"/>
-  <circle cx="44" cy="22" r="2.2" fill="#ff6b5f" opacity="0.9"/>
+  <!-- face plate -->
+  <path d="M32 20 L42 25 L42 38 L32 44 L22 38 L22 25 Z" fill="#e6c36f"/>
+
+  <!-- ears -->
+  <path d="M24 20 L20 14 L28 17 Z" fill="#ff6a5f"/>
+  <path d="M40 20 L44 14 L36 17 Z" fill="#ff6a5f"/>
+
+  <!-- eyes (solid blocks) -->
+  <rect x="26" y="29" width="4" height="3" rx="1" fill="#1f1720"/>
+  <rect x="34" y="29" width="4" height="3" rx="1" fill="#1f1720"/>
+
+  <!-- nose and mouth block -->
+  <path d="M32 33 L35 36 L32 39 L29 36 Z" fill="#1f1720"/>
+  <rect x="28" y="40" width="8" height="2.8" rx="1.4" fill="#1f1720"/>
 </svg>
