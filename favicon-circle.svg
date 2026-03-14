@@ -1,18 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" shape-rendering="crispEdges">
-  <!-- v2: ultra-bold geometric lion for 16-32px tabs -->
-  <circle cx="32" cy="32" r="31" fill="#17121a"/>
-  <circle cx="32" cy="32" r="29" fill="none" stroke="#ff5f52" stroke-width="4"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" shape-rendering="geometricPrecision">
+  <!-- minimalist line-art lion, optimized for tab clarity -->
+  <circle cx="32" cy="32" r="30" fill="#141018" stroke="#ff6256" stroke-width="3"/>
 
-  <!-- mane: single heavy mass -->
-  <path d="M32 10 L49 19 L55 32 L49 45 L32 54 L15 45 L9 32 L15 19 Z" fill="#ff5f52"/>
+  <!-- mane outline -->
+  <path d="M32 13 L46 20 L51 32 L46 44 L32 51 L18 44 L13 32 L18 20 Z"
+        fill="none" stroke="#ff6256" stroke-width="3.2" stroke-linejoin="round"/>
 
-  <!-- face: single block -->
-  <path d="M32 22 L43 27 L43 39 L32 44 L21 39 L21 27 Z" fill="#f0cb73"/>
+  <!-- face outline -->
+  <path d="M32 22 L41 27 L41 38 L32 43 L23 38 L23 27 Z"
+        fill="none" stroke="#f2cd76" stroke-width="3" stroke-linejoin="round"/>
 
-  <!-- eyes: thicker bars -->
-  <rect x="24.5" y="30" width="6" height="4" rx="1" fill="#17121a"/>
-  <rect x="33.5" y="30" width="6" height="4" rx="1" fill="#17121a"/>
+  <!-- eyes -->
+  <path d="M26 31h5M33 31h5" stroke="#f2cd76" stroke-width="2.8" stroke-linecap="round"/>
 
-  <!-- nose + mouth: single strong shape -->
-  <path d="M32 34 L36 38 L32 42 L28 38 Z" fill="#17121a"/>
+  <!-- nose + mouth -->
+  <path d="M32 34l2.4 2.6-2.4 2.6-2.4-2.6z" fill="none" stroke="#f2cd76" stroke-width="2.4"/>
+  <path d="M28.5 41c1.2 1 5.8 1 7 0" fill="none" stroke="#f2cd76" stroke-width="2.4" stroke-linecap="round"/>
 </svg>
